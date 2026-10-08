@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Who Would Win? · Bird Battle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <img class="brandmark" src="assets/favor-kids-logo-cream.svg" alt="Favor Kids logo">
+      <div class="brandtext"><span class="eyebrow">LIVE GROUP GAME</span><strong>WHO WOULD WIN<span class="question">?</span></strong></div>
+      <nav aria-label="Main sections">
+        <button id="gameTab" class="nav-button active" type="button">Game</button>
+        <button id="slidesTab" class="nav-button" type="button">Slides</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="gameView" class="view" aria-label="Bird battle game">
+        <div class="game-heading">
+          <div><div class="section-kicker">BIRD BATTLE</div><h1>Who would win?</h1><p>Let everyone vote on Zoom. Then click the winner.</p></div>
+          <div class="round-pill" id="roundPill">ROUND 1</div>
+        </div>
+        <div id="matchup" class="matchup">
+          <button id="leftBird" class="bird-card" type="button" aria-label="Choose left bird">
+            <div class="photo-wrap"><img id="leftImage" alt=""><span class="choose-label">CLICK TO PICK WINNER ↗</span></div>
+            <div class="bird-name" id="leftName"></div>
+          </button>
+          <div class="vs-badge" aria-hidden="true">VS</div>
+          <button id="rightBird" class="bird-card" type="button" aria-label="Choose right bird">
+            <div class="photo-wrap"><img id="rightImage" alt=""><span class="choose-label">CLICK TO PICK WINNER ↗</span></div>
+            <div class="bird-name" id="rightName"></div>
+          </button>
+        </div>
+        <div id="champion" class="champion hidden" role="status"></div>
+        <div class="game-footer">
+          <div class="game-status" id="gameStatus"></div>
+          <div class="footer-buttons"><button id="undoButton" class="text-button" type="button">↶ Undo pick</button><button id="restartButton" class="text-button" type="button">↻ New game</button><button id="slidesAfterButton" class="primary-button hidden" type="button">Start presentation →</button></div>
+        </div>
+      </section>
+
+      <section id="slidesView" class="view hidden" aria-label="Editable presentation">
+        <div class="slides-heading"><div><div class="section-kicker">YOUR MESSAGE</div><h1>Presentation</h1><p>Edit your slides, then present them after the game.</p></div><div class="slide-actions"><button id="editToggle" class="outline-button" type="button">Done editing</button><button id="presentButton" class="primary-button" type="button">Present ↗</button></div></div>
+        <div class="slide-workspace">
+          <aside id="editorPanel" class="editor-panel">
+            <div class="panel-top"><strong>Slides</strong><button id="addSlide" class="small-button" type="button">+ Add slide</button></div>
+            <div id="slideList" class="slide-list"></div>
+            <div class="editor-fields">
+              <label>Heading <input id="slideTitle" type="text" placeholder="Slide heading"></label>
+              <label>Body <textarea id="slideBody" rows="6" placeholder="Write your message here. Use a new line for each point."></textarea></label>
+              <label>Photo or artwork URL <input id="slideImage" type="url" placeholder="Optional https:// image link"></label>
+              <label class="upload-label">Or upload image <input id="slideUpload" type="file" accept="image/*"></label>
+              <div class="editor-row"><button id="duplicateSlide" class="small-button" type="button">Duplicate</button><button id="deleteSlide" class="small-button danger" type="button">Delete</button></div>
+            </div>
+            <div class="save-tools"><button id="exportSlides" class="text-button" type="button">Download slide backup</button><label class="text-button import-label">Import slide backup<input id="importSlides" type="file" accept="application/json,.json"></label><div class="save-note">Slides save automatically in this browser.</div></div>
+          </aside>
+          <div class="slide-stage">
+            <div id="slideCanvas" class="slide-canvas" aria-live="polite"><div class="slide-brand"><img src="assets/favor-kids-logo-cream.svg" alt="Favor Kids logo"><span>who would win?</span></div><div id="slideContent" class="slide-content"><h2 id="previewTitle"></h2><div id="previewBody" class="preview-body"></div></div><img id="previewImage" class="preview-image hidden" alt="Slide artwork"><div class="slide-number" id="slideNumber"></div></div>
+            <div class="slide-controls"><button id="prevSlide" class="text-button" type="button">← Previous</button><span id="slidePosition"></span><button id="nextSlide" class="text-button" type="button">Next →</button><button id="exitPresent" class="text-button hidden" type="button">Exit presentation</button></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="global-footer"><span>Host controlled · participants vote aloud or in Zoom chat</span><button id="creditsButton" class="text-button" type="button">Image credits</button></footer>
+  </div>
+  <dialog id="creditsDialog"><div class="dialog-head"><h2>Image credits</h2><button id="closeCredits" class="text-button" type="button">Close</button></div><p>Bird photos are from Wikimedia Commons. Each source page lists its license and photographer.</p><ul id="creditsList"></ul><p>“Tweety” is represented by an original yellow cartoon bird illustration for this game.</p></dialog>
+  <script src="birds.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

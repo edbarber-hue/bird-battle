@@ -1,0 +1,77 @@
+:root{--ink:#152132;--navy:#102236;--navy2:#1c3650;--cream:#f8f4ea;--gold:#f9c94d;--orange:#ff774e;--muted:#667280;--line:#d8dedb;font-family:Arial,Helvetica,sans-serif;color:var(--ink)}*{box-sizing:border-box}body{margin:0;background:var(--cream)}button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--orange);outline-offset:2px}.hidden{display:none!important}.app-shell{min-height:100vh;display:flex;flex-direction:column}.topbar{height:88px;padding:15px clamp(20px,4vw,64px);display:flex;align-items:center;gap:15px;background:var(--navy);color:white}.brandmark{display:grid;place-items:center;width:48px;height:48px;border-radius:13px;background:var(--gold);color:var(--navy);font-size:31px;font-weight:900;transform:rotate(-8deg)}.brandtext{display:flex;flex-direction:column;line-height:1}.brandtext strong{font-size:22px;letter-spacing:-1px}.question{color:var(--gold)}.eyebrow,.section-kicker{font-size:11px;font-weight:900;letter-spacing:2.5px}.eyebrow{color:var(--gold);margin-bottom:6px}.topbar nav{margin-left:auto;display:flex;gap:8px}.nav-button{border:1px solid rgba(255,255,255,.3);background:transparent;color:white;padding:10px 18px;border-radius:11px;font-weight:800}.nav-button.active{background:var(--gold);border-color:var(--gold);color:var(--navy)}main{width:100%;max-width:1600px;margin:0 auto;flex:1}.view{padding:clamp(18px,3vw,42px) clamp(16px,4vw,64px)}.game-heading,.slides-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:25px}.section-kicker{color:#bb542c}.game-heading h1,.slides-heading h1{font-size:clamp(36px,4.6vw,70px);letter-spacing:-3px;line-height:.95;margin:8px 0}.game-heading p,.slides-heading p{font-size:18px;color:var(--muted);margin:12px 0 0}.round-pill{padding:13px 20px;border-radius:100px;background:var(--navy);color:var(--gold);font-weight:900;letter-spacing:1px;white-space:nowrap}.matchup{display:grid;grid-template-columns:minmax(0,1fr) 88px minmax(0,1fr);align-items:center;gap:12px}.bird-card{width:100%;border:0;border-radius:25px;background:#fff;padding:10px;box-shadow:0 13px 35px rgba(16,34,54,.12);text-align:left;transition:transform .2s,box-shadow .2s}.bird-card:hover{transform:translateY(-5px);box-shadow:0 20px 42px rgba(16,34,54,.2)}.bird-card:active{transform:scale(.985)}.photo-wrap{height:min(48vh,500px);min-height:270px;position:relative;overflow:hidden;border-radius:18px;background:#dce6e4}.photo-wrap img{width:100%;height:100%;object-fit:cover;display:block}.choose-label{position:absolute;bottom:16px;left:16px;background:var(--gold);color:var(--navy);font-size:12px;font-weight:900;letter-spacing:.9px;border-radius:100px;padding:11px 16px;box-shadow:0 5px 15px #0003}.bird-name{font-size:clamp(22px,2.2vw,34px);font-weight:900;letter-spacing:-1px;padding:16px 12px 10px;text-align:center;text-transform:uppercase}.vs-badge{height:75px;width:75px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:white;font-size:25px;font-weight:1000;letter-spacing:-2px;transform:rotate(-12deg);box-shadow:0 10px 20px #15213225;z-index:1}.game-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 3px}.game-status{color:var(--muted);font-weight:700}.footer-buttons,.slide-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.text-button{border:0;background:transparent;color:var(--navy);font-weight:800;padding:10px 8px}.text-button:hover{text-decoration:underline}.primary-button{border:0;border-radius:11px;padding:13px 20px;background:var(--navy);color:white;font-weight:900}.primary-button:hover{background:var(--navy2)}.outline-button,.small-button{border:1px solid var(--line);border-radius:10px;background:white;color:var(--navy);padding:10px 14px;font-weight:800}.outline-button:hover,.small-button:hover{border-color:var(--navy)}.champion{text-align:center;background:var(--navy);color:white;border-radius:24px;padding:28px;min-height:510px;display:flex;align-items:center;justify-content:center;flex-direction:column}.champion .trophy{font-size:62px}.champion .champion-label{font-size:14px;letter-spacing:3px;color:var(--gold);font-weight:900;margin:15px 0}.champion img{width:min(380px,60vw);height:250px;object-fit:cover;border-radius:15px}.champion h2{font-size:clamp(34px,6vw,80px);margin:20px 0 0;letter-spacing:-3px}.slides-heading h1{font-size:clamp(36px,4vw,58px)}.slide-workspace{display:grid;grid-template-columns:300px minmax(0,1fr);gap:22px}.editor-panel{background:white;border:1px solid var(--line);border-radius:18px;padding:16px;max-height:calc(100vh - 230px);overflow:auto}.panel-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:14px}.panel-top strong{font-size:19px}.small-button{font-size:13px;padding:8px 10px}.slide-list{display:flex;flex-direction:column;gap:8px;max-height:200px;overflow:auto}.slide-item{display:flex;align-items:center;gap:10px;text-align:left;width:100%;border:1px solid var(--line);background:#f9faf7;padding:12px;border-radius:10px;color:var(--ink);font-weight:800}.slide-item.active{background:var(--gold);border-color:var(--gold)}.slide-item span:first-child{opacity:.55}.slide-item span:last-child{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.editor-fields{display:flex;flex-direction:column;gap:12px;margin-top:20px;border-top:1px solid var(--line);padding-top:18px}.editor-fields label{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.7px}.editor-fields input:not([type=file]),.editor-fields textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:11px;background:#fff;color:var(--ink);font-size:14px;font-weight:400;text-transform:none;letter-spacing:0;resize:vertical}.upload-label input{font-size:12px;text-transform:none}.editor-row{display:flex;gap:8px}.danger{color:#a43a33}.save-tools{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;display:flex;flex-direction:column;align-items:flex-start}.import-label input{display:none}.save-note{font-size:12px;color:var(--muted);padding:8px}.slide-stage{min-width:0}.slide-canvas{width:100%;aspect-ratio:16/9;background:var(--navy);color:white;border-radius:18px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:8%;box-shadow:0 20px 45px #15213225}.slide-canvas:before{content:'';position:absolute;width:55%;aspect-ratio:1;right:-23%;top:-55%;border:70px solid #f9c94d1e;border-radius:50%}.slide-canvas:after{content:'';position:absolute;width:48%;height:13px;background:var(--gold);left:8%;bottom:14%;border-radius:20px}.slide-brand{position:absolute;top:6%;left:8%;font-weight:900;color:var(--gold);letter-spacing:1.5px;font-size:clamp(9px,1vw,15px)}.slide-content{position:relative;z-index:1;max-width:85%}.slide-content h2{font-size:clamp(27px,4.5vw,72px);letter-spacing:-2px;line-height:1.06;margin:0 0 22px;overflow-wrap:anywhere}.preview-body{font-size:clamp(13px,1.8vw,28px);line-height:1.42;white-space:pre-wrap;overflow-wrap:anywhere}.slide-number{position:absolute;bottom:6%;right:5%;font-weight:800;color:#ffffff8f;font-size:14px}.preview-image{position:absolute;right:5%;top:18%;width:36%;height:58%;object-fit:cover;border-radius:14px;z-index:0;box-shadow:0 10px 30px #0005}.slide-canvas.has-image .slide-content{max-width:54%}.slide-controls{display:flex;align-items:center;justify-content:space-between;padding:10px 5px;font-weight:800;color:var(--muted)}.global-footer{display:flex;justify-content:space-between;align-items:center;padding:14px clamp(20px,4vw,64px);font-size:12px;color:var(--muted)}dialog{border:0;border-radius:18px;max-width:min(650px,92vw);max-height:80vh;padding:25px;box-shadow:0 20px 70px #0005}dialog::backdrop{background:#102236ad}.dialog-head{display:flex;align-items:center;justify-content:space-between}.dialog-head h2{margin:0}dialog ul{max-height:45vh;overflow:auto;padding-left:20px}dialog li{margin:8px 0}dialog a{color:var(--navy)}body.presentation-mode{background:var(--navy)}body.presentation-mode .topbar,body.presentation-mode .slides-heading,body.presentation-mode .editor-panel,body.presentation-mode .global-footer{display:none}body.presentation-mode .view{padding:0}body.presentation-mode .slide-workspace{display:block}body.presentation-mode .slide-canvas{height:calc(100vh - 54px);width:100vw;border-radius:0;aspect-ratio:auto;box-shadow:none}body.presentation-mode .slide-content h2{font-size:clamp(48px,6.5vw,110px)}body.presentation-mode .preview-body{font-size:clamp(24px,2.9vw,44px)}body.presentation-mode .slide-controls{padding:3px 25px;color:white}body.presentation-mode .slide-controls button{color:white}@media(max-width:800px){.topbar{height:72px}.brandtext strong{font-size:17px}.brandmark{width:40px;height:40px}.matchup{grid-template-columns:minmax(0,1fr) 45px minmax(0,1fr);gap:2px}.vs-badge{width:50px;height:50px;font-size:18px;margin-left:-2px}.photo-wrap{min-height:190px;height:38vh}.choose-label{font-size:9px;left:7px;bottom:7px;padding:7px}.bird-name{font-size:17px}.slide-workspace{grid-template-columns:1fr}.editor-panel{max-height:none;order:2}.slide-stage{order:1}.slides-heading,.game-heading{align-items:flex-start}.slides-heading{flex-wrap:wrap}.game-footer{align-items:flex-start;flex-direction:column}}@media(max-width:520px){.topbar{padding:10px}.eyebrow{display:none}.nav-button{padding:8px 10px}.view{padding:18px 10px}.game-heading h1{font-size:38px}.game-heading p{font-size:14px}.round-pill{padding:8px;font-size:11px}.bird-card{padding:4px;border-radius:12px}.photo-wrap{border-radius:9px;min-height:150px;height:32vh}.choose-label{display:none}.bird-name{font-size:14px;padding:10px 0 5px}.vs-badge{width:40px;height:40px}.global-footer{font-size:10px}}
+
+/* ===== Favor Kids brand layer (from "Read My Bible" brand guide) =====
+   Colors: #faa731 orange · #a28fbc lavender · #c86354 terracotta · #59877d sage · #fbe8ca cream
+   Type: Agharti (display, lowercase) · Favor Sans (labels, uppercase) */
+@font-face{font-family:"Agharti";src:url("assets/agharti-bold.ttf") format("truetype");font-weight:700;font-display:swap}
+@font-face{font-family:"Favor Sans";src:url("assets/favor-sans-bold.otf") format("opentype");font-weight:700;font-display:swap}
+:root{--orange:#faa731;--lavender:#a28fbc;--terracotta:#c86354;--sage:#59877d;--cream:#fbe8ca;--paper:#e4e2de;--ink:#17191d;--navy:#17191d;--navy2:#2a2d33;--gold:#faa731;--muted:#5d625f;--line:#cfcbc4;
+  --display:"Agharti","Bebas Neue",Impact,sans-serif;--label:"Favor Sans","Arial Black",Arial,sans-serif;color:var(--ink)}
+body{background:var(--paper)}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline-color:var(--terracotta)}
+
+/* Header */
+.topbar{background:var(--ink)}
+.brandmark{display:block;width:auto;height:58px;border-radius:0;background:none;transform:none}
+.brandtext strong{font-family:var(--display);font-weight:700;font-size:34px;letter-spacing:0;text-transform:lowercase;color:var(--cream)}
+.question{color:var(--orange)}
+.eyebrow,.section-kicker,.round-pill,.choose-label,.nav-button,.primary-button,.outline-button,.small-button,.text-button,.slide-item,.editor-fields label,.champion-label,.slide-brand,.game-status{font-family:var(--label)}
+.eyebrow{color:var(--lavender)}
+.nav-button{border-color:rgba(251,232,202,.35);color:var(--cream)}
+.nav-button.active{background:var(--orange);border-color:var(--orange);color:var(--ink)}
+
+/* Headings */
+.section-kicker{color:var(--sage)}
+.game-heading h1,.slides-heading h1{font-family:var(--display);font-weight:700;text-transform:lowercase;letter-spacing:0;line-height:.9;color:var(--terracotta);font-size:clamp(48px,6vw,96px)}
+.game-heading p,.slides-heading p{color:var(--muted)}
+.round-pill{background:transparent;border:2px solid var(--lavender);color:var(--lavender);letter-spacing:2px}
+
+/* Matchup */
+.bird-card{background:var(--cream);box-shadow:0 13px 30px rgba(23,25,29,.12)}
+.bird-card:hover{box-shadow:0 20px 40px rgba(23,25,29,.2)}
+#leftBird .photo-wrap{background:var(--orange)}
+#rightBird .photo-wrap{background:var(--lavender)}
+.choose-label{background:var(--cream);color:var(--ink)}
+.bird-name{font-family:var(--display);font-weight:700;text-transform:lowercase;letter-spacing:0;color:var(--terracotta);font-size:clamp(34px,3.4vw,56px);line-height:1;padding:16px 12px 12px}
+.vs-badge{background:var(--sage);color:var(--cream);font-family:var(--display);font-weight:700;font-size:38px;letter-spacing:0;text-transform:lowercase}
+
+/* Buttons */
+.text-button{color:var(--ink)}
+.primary-button{background:var(--terracotta);color:var(--cream)}
+.primary-button:hover{background:#b0503f}
+.outline-button,.small-button{background:var(--cream);color:var(--ink)}
+.outline-button:hover,.small-button:hover{border-color:var(--terracotta)}
+.danger{color:var(--terracotta)}
+
+/* Champion */
+.champion{background:var(--sage);color:var(--cream)}
+.champion .champion-label{color:var(--orange)}
+.champion img{border:8px solid var(--cream);border-radius:18px}
+.champion h2{font-family:var(--display);font-weight:700;text-transform:lowercase;letter-spacing:0;color:var(--cream);font-size:clamp(56px,8vw,120px);line-height:.95}
+
+/* Slides editor */
+.editor-panel{background:#f2f0ec;border-color:var(--line)}
+.slide-item{background:var(--paper);border-color:var(--line)}
+.slide-item.active{background:var(--orange);border-color:var(--orange)}
+.editor-fields input:not([type=file]),.editor-fields textarea{background:#fff}
+
+/* Slide canvas: terracotta title-card look from the guide */
+.slide-canvas{background:var(--terracotta);color:var(--cream)}
+.slide-canvas:before{border-color:rgba(251,232,202,.12)}
+.slide-canvas:after{background:var(--orange)}
+.slide-brand{display:flex;align-items:center;gap:12px;color:var(--cream);text-transform:uppercase}
+.slide-brand img{height:clamp(30px,4.5vw,64px);width:auto;display:block}
+.slide-content h2{font-family:var(--display);font-weight:700;text-transform:lowercase;letter-spacing:0;line-height:.95;color:var(--cream);font-size:clamp(40px,6.5vw,110px)}
+.preview-body{color:var(--cream)}
+.slide-number{color:rgba(251,232,202,.7);font-family:var(--label)}
+body.presentation-mode{background:var(--terracotta)}
+body.presentation-mode .slide-content h2{font-size:clamp(64px,9vw,160px)}
+
+/* Footer & dialog */
+dialog{background:var(--paper)}
+dialog::backdrop{background:rgba(23,25,29,.7)}
+dialog a{color:var(--sage)}
+
+@media(max-width:800px){.brandmark{height:46px}.brandtext strong{font-size:26px}.vs-badge{font-size:24px}.bird-name{font-size:28px}}
+@media(max-width:520px){.brandmark{height:40px}.vs-badge{font-size:20px}.bird-name{font-size:22px}}
+.editor-fields input,.editor-fields textarea,.upload-label input{font-family:Arial,Helvetica,sans-serif}
